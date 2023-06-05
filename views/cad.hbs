@@ -1,0 +1,48 @@
+<section class="h-100">
+		<div class="container h-100">
+			<div class="row justify-content-md-center h-100">
+				<div class="card-wrapper">
+					<div class="card fat">
+						<div class="card-body">
+							<h4 class="card-title">Cadastro</h4>
+                             {{>_msg}}
+							<form action="/cad" method="post" class="my-login-validation">
+								<div class="form-group">
+									<label for="name">Nome</label>
+									<input id="name" type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome" required autofocus>
+								</div>
+
+								<div class="form-group">
+									<label for="email">Email</label>
+									<input id="email" type="email" class="form-control" id="email" name="email" placeholder="Digite seu email" required>
+								</div>
+
+								<div class="form-group">
+									<label for="password">Senha (Mínimo 6 Dígitos)</label>
+									<input id="password" type="password" class="form-control" id="password" name="password" placeholder="Digite sua senha" required data-eye>
+								</div>
+
+								<div class="form-group">
+									<label for="password">Repita sua senha</label>
+									<input id="password" type="password" class="form-control" id="passwordrepeat" name="passwordrepeat" placeholder="Repita sua senha" required data-eye>
+								</div>
+
+								<div class="form-group">
+									<div class="custom-checkbox custom-control">
+										<input type="checkbox" name="agree" id="agree" class="custom-control-input" required="">
+										<label for="agree" class="custom-control-label">Ao se cadastrar você concorda com a nossa <a href="#">Política de Privacidade</a> e os <a href="#">Termos de uso</a></label>
+									</div>
+								</div>
+
+								<div class="form-group m-0">
+									<button type="submit" class="btn btn-primary btn-block">
+										Realizar Cadastro
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</section>
