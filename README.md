@@ -20,6 +20,7 @@ Este é um projeto de implementação de autenticação de login utilizando Node
 - body-parser
 - express-session
 - cookie-parser
+- Bootstrap
 
 ## Requisitos
 
